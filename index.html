@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Frite d'Or — Friterie</title>
+  <meta name="description" content="La Frite d'Or — friterie artisanale. Frites maison, snacks, sauces maison et menu du jour." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <div class="brand">
+        <a href="#top" aria-label="Aller à l'accueil"><strong>La Frite d'Or</strong></a>
+        <small>Friterie artisanale</small>
+      </div>
+
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#horaires">Horaires</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn-primary" href="#commander">Commander</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Frites maison — Goût authentique</h1>
+          <p>Des pommes de terre fraîches, une cuisson parfaite, des sauces maison — ouvert du mardi au dimanche.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#menu">Voir le menu</a>
+            <a class="btn-ghost" href="#contact">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://source.unsplash.com/800x600/?fries,french-fries" alt="Assiette de frites croustillantes">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section container">
+      <h2>Notre menu</h2>
+      <p class="lead">Frites maison, burgers, snacks et sauces artisanales. Prix indicatifs.</p>
+
+      <div class="menu-grid" role="list">
+        <article class="menu-item" role="listitem">
+          <h3>Frite portion</h3>
+          <p class="desc">Portion classique — légère croustillante, sel au choix.</p>
+          <div class="price">€3.50</div>
+          <button class="btn-outline order-btn" data-item="Frite portion">Commander</button>
+        </article>
+
+        <article class="menu-item" role="listitem">
+          <h3>Frite grande</h3>
+          <p class="desc">Pour les gourmands — double cuisson pour le croustillant.</p>
+          <div class="price">€5.50</div>
+          <button class="btn-outline order-btn" data-item="Frite grande">Commander</button>
+        </article>
+
+        <article class="menu-item" role="listitem">
+          <h3>Burger classique</h3>
+          <p class="desc">Steak, salade, tomate, sauce maison.</p>
+          <div class="price">€7.00</div>
+          <button class="btn-outline order-btn" data-item="Burger classique">Commander</button>
+        </article>
+
+        <article class="menu-item" role="listitem">
+          <h3>Snack végétarien</h3>
+          <p class="desc">Galette de légumes, sauce curry.</p>
+          <div class="price">€6.00</div>
+          <button class="btn-outline order-btn" data-item="Snack végétarien">Commander</button>
+        </article>
+
+        <article class="menu-item" role="listitem">
+          <h3>Sauces maison</h3>
+          <p class="desc">Mayonnaise à l'ail, sauce samurai, ketchup maison.</p>
+          <div class="price">€0.80</div>
+          <button class="btn-outline order-btn" data-item="Sauces maison">Commander</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="galerie" class="section gallery">
+      <div class="container">
+        <h2>Galerie</h2>
+        <div class="gallery-grid">
+          <img src="https://source.unsplash.com/400x300/?fries" alt="Frites" loading="lazy">
+          <img src="https://source.unsplash.com/400x300/?burger" alt="Burger" loading="lazy">
+          <img src="https://source.unsplash.com/400x300/?restaurant,kitchen" alt="Cuisine" loading="lazy">
+          <img src="https://source.unsplash.com/400x300/?chef,cooking" alt="Chef en cuisine" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="horaires" class="section container">
+      <h2>Horaires & Informations</h2>
+      <div class="info-grid">
+        <div>
+          <h3>Horaires</h3>
+          <ul>
+            <li>Mardi — Vendredi : 11:00 — 14:30 & 17:30 — 22:00</li>
+            <li>Samedi : 11:00 — 23:00</li>
+            <li>Dimanche : 11:00 — 21:00</li>
+            <li>Lundi : Fermé</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>Téléphone : <a href="tel:+33123456789">01 23 45 67 89</a></p>
+          <p>Email : <a href="mailto:contact@lafritedor.example">contact@lafritedor.example</a></p>
+          <p>Adresse : 12 Rue de la Patate, 75000 Paris</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact & Réservation</h2>
+      <p class="lead">Laisse-nous un message ou demande une réservation — on te répond rapidement.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Envoyer</button>
+          <button type="reset" class="btn-ghost">Réinitialiser</button>
+        </div>
+
+        <p id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="commander" class="section container">
+      <h2>Commander</h2>
+      <p>La commande ci-dessous est une simulation (pour un site réel, il faut intégrer un système de paiement ou une API de livraison).</p>
+
+      <div id="order-summary" class="order-summary" aria-live="polite">
+        <p>Aucune commande sélectionnée.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>La Frite d'Or</strong>
+        <p>Friterie artisanale • Qualité & Savoir-faire</p>
+      </div>
+      <div>
+        <p>Suivez-nous :</p>
+        <ul class="social">
+          <li><a href="#" aria-label="Page Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Page Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>&copy; <span id="year"></span> La Frite d'Or</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal simple pour commander -->
+  <div id="order-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Fermer">✕</button>
+      <h3>Confirmer la commande</h3>
+      <p id="modal-item">Item</p>
+      <form id="order-form">
+        <label for="o-name">Nom</label>
+        <input id="o-name" name="o-name" type="text" required>
+
+        <label for="o-phone">Téléphone</label>
+        <input id="o-phone" name="o-phone" type="tel" required>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Confirmer (simulation)</button>
+          <button type="button" class="btn-ghost modal-close">Annuler</button>
+        </div>
+      </form>
+      <p id="order-feedback" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
